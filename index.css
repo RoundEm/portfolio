@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anaheim', sans-serif;
+    /* font-family: 'Pirata One', cursive; */
+    
+
+}
+nav {
+    font-size: 2em;
+    padding: 30px 25px;
+    /* background-color: #064aa3; */
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+.name {
+    width: 50%;
+}
+li {
+    list-style: none;
+    padding: 0 10px;
+}
+li:nth-child(n+2) {
+    margin-left: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    /* color: #b7f93e; */
+    text-shadow: 0 0 10px #e62525;
+}
+p a {
+    color: blue;
+}
+section {
+    margin: 30px 0;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.3em;
+    padding: 15px 30px;
+}
+#contact {
+    /* margin: 0 auto; */
+    text-align: center;
+}
+#contact img {
+    margin: 20px 10px;
+}
+/* #projects > div {
+    border: 1px solid gray;
+} */
+#projects div div {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 3px solid black;
+}
+.portfolio_img {
+    max-width: 100%;
+    height: auto;
+    height: 75%;
+}
+
+@media all and (max-width: 750px) {
+    nav {
+        text-align: center;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .name {
+        margin: 0 0 30px;
+        width: 100%;
+    }
+    li {
+        margin: 10px auto;
+    }
+}
