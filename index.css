@@ -3,73 +3,126 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anaheim', sans-serif;
-    /* font-family: 'Pirata One', cursive; */
-    
-
+}
+body {
+    background-color: #fcf9f9;
 }
 nav {
     font-size: 2em;
     padding: 30px 25px;
-    /* background-color: #064aa3; */
+    background-color: #272828;
+    overflow: hidden;
 }
+/* main {
+    padding: 15px;
+} */
 .flex-container {
     display: flex;
     justify-content: space-around;
 }
 .name {
-    width: 50%;
+    width: 100%;
+}
+.name a {
+    color: #e8e5e5;
+}
+.name a:hover {
+    text-shadow: 0 0 10px #e8e5e5;
+}
+nav a {
+    font-family: 'Pirata One', cursive;
 }
 li {
     list-style: none;
-    padding: 0 10px;
+    padding: 0 45px;
 }
 li:nth-child(n+2) {
     margin-left: auto;
 }
-a {
+nav {
+    font-family: 'Pirata One', cursive;
+    border-bottom: 2px solid #b7f93e;
+}
+nav a {
     text-decoration: none;
-    color: black;
+    color: #17dc62;
 }
-a:hover {
-    /* color: #b7f93e; */
-    text-shadow: 0 0 10px #e62525;
+nav a:hover {
+    color: #b7f93e;
+    text-shadow: 0 0 10px #17dc62;
 }
-p a {
-    color: blue;
+main {
+    margin: 0 25px;
+}
+div div a, p a {
+    text-decoration-color: #17dc62;
+    color: #272828;
 }
 section {
-    margin: 30px 0;
+    padding: 30px 0;
 }
 h2 {
     text-align: center;
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5em;
 }
-
+h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5em;
+    font-style: italic;
+}
 p {
     font-size: 1.3em;
     padding: 15px 30px;
 }
-#contact {
-    /* margin: 0 auto; */
-    text-align: center;
-}
-#contact img {
-    margin: 20px 10px;
-}
-/* #projects > div {
-    border: 1px solid gray;
-} */
 #projects div div {
     width: 85%;
-    margin: 0 auto;
+    margin: 15px auto;
     text-align: center;
-    border-top: 3px solid black;
+    border-top: 3px solid #e8e5e5;
+}
+#projects li {
+    display: inline-block;
+    margin: 0 0 5px;
+    padding: 0 10px;
+    background-color: #e8e5e5;
+    border: 1px solid #b7f93e;
+    border-radius: 3px;
+}
+#projects div div p {
+    text-align: left;
 }
 .portfolio_img {
     max-width: 100%;
     height: auto;
-    height: 75%;
+    border: 1px solid #17dc62;
+    text-align: center;
 }
-
+#contact {
+    text-align: center;
+}
+#contact div {
+    display: inline-block;
+    margin: 25px 50px;
+    padding: 20px;
+    border: 2px solid #fcf9f9;
+}
+#contact div:hover {
+    border-top: 2px solid #b7f93e; 
+    background: linear-gradient(#e8e5e5, #fcf9f9, #fcf9f9);
+    box-shadow: 0 7px 10px -7px;
+}
+#contact h3 {
+    font-style: normal;
+}
+#contact img {
+    display: block;
+    margin: 0 auto; 
+}
+#contact a {
+    text-decoration: none;
+    color: black;
+}
 @media all and (max-width: 750px) {
     nav {
         text-align: center;
