@@ -9,7 +9,7 @@
         <title>Jason Roundtree || Portfolio</title>
     </head>
     <body>
-        <nav>
+        <nav role="navigation">
             <ul class="flex-container">
                 <li class="name" tabindex="0"><a href="">Jason Roundtree</a></li>
                 <li tabindex="0"><a href="#about">About</a></li>
@@ -31,7 +31,8 @@
                 <h2>Projects</h2>
                 <div>
                     <div id="recipe-revelation">
-                        <h3><a href="">Recipe Revelation</a></h3>
+                        <h3><a href="https://roundem.github.io/Recipe_Revelation_recipe_finder/" target="_blank">Recipe Revelation</a></h3>
+                        <h4><a href="https://github.com/RoundEm/Recipe_Revelation_recipe_finder" target="_blank">Github repo</a></h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -48,7 +49,8 @@
 
                 <div>
                     <div id="log-and-learn">
-                        <h3><a href="">Log and Learn</a></h3>
+                        <h3><a href="https://log-and-learn.herokuapp.com/" target="_blank">Log and Learn</a></h3>
+                        <h4><a href="https://github.com/RoundEm/log-and-learn" target="_blank">Github repo</a></h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -71,7 +73,8 @@
 
                 <div>
                     <div id="clash-for-cup">
-                        <h3><a href="">Clash for the Cup</a></h3>
+                        <h3><a href="https://clash-for-the-cup.herokuapp.com/" target="_blank">Clash for the Cup</a></h3>
+                        <h4><a href="https://github.com/RoundEm/Clash_for_the_Cup" target="_blank">Github repo</a></h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -93,8 +96,8 @@
                             <li>Responsive Design</li>
                         </ul>
                         <p>Create points-based golfing leagues for you and your friends or social groups. Establish points for custom criteria  and accomplishments achieved during each round played. The goal is to earn the most points during a season (for fellow golfers, think Fed-Ex Cup<sup>&#174;</sup> points on the PGA Tour<sup>&#174;</sup>) and in doing so it will give you more incentive to continuously improve your game!</p>
-                        <img src="images/clash-for-the-cup_1.png" alt="Screenshot of Clash for the Cup application Create League page" class="portfolio_img" />
-                        <img src="images/clash-for-the-cup_2.png" alt="Screenshot of Clash for the Cup application View/Edit Round page" class="portfolio_img" />
+                        <a href="https://clash-for-the-cup.herokuapp.com/" target="_blank"><img src="images/clash-for-the-cup_1.png" alt="Screenshot of Clash for the Cup application Create League page" class="portfolio_img" /></a>
+                        <a href="https://clash-for-the-cup.herokuapp.com/" target="_blank"><img src="images/clash-for-the-cup_2.png" alt="Screenshot of Clash for the Cup application View/Edit Round page" class="portfolio_img" /></a>
                     </div>
                 </div>
             </section>
@@ -127,8 +130,17 @@
 
         <footer role="contentinfo">
             <!-- <p>&#169; Jason Roundtree 2018</p> -->
-            <p></p>
+            <p></p>       
         </footer>
-        <script type="text/javascript" src="/index.js"></script>
+        <!-- <script type="text/javascript" src="index.js"></script> -->
+        <script>
+            const date = new Date();
+            const year = date.getFullYear();
+            function updateFooter() {
+                const x = document.querySelector('footer p');
+                x.innerHTML = `&#169; Jason Roundtree ${year}`;
+            };
+            updateFooter();
+        </script>
     </body>
 </html>

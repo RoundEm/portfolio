@@ -71,8 +71,12 @@ h2 {
     font-size: 2.5em;
 }
 h3 {
-    margin: 15px 0;
+    margin: 15px 0 2px;
     font-size: 1.5em;
+    font-style: italic;
+}
+h4 {
+    margin-bottom: 10px;
     font-style: italic;
 }
 p {
@@ -134,6 +138,7 @@ p {
 footer {
     background-color: #272828;
     color: #b7f93e;
+    text-align: center;
 }
 sup {
     font-size: .6em;
