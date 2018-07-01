@@ -6,8 +6,12 @@
 }
 body {
     background-color: #fcf9f9;
+    /* padding-top: 90px; */
 }
 nav {
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
     font-size: 2em;
     padding: 30px 25px;
     background-color: #272828;
@@ -26,7 +30,7 @@ nav {
 .name a {
     color: #e8e5e5;
 }
-.name a:hover {
+nav a:hover, nav a:focus {
     text-shadow: 0 0 10px #e8e5e5;
 }
 nav a {
@@ -67,7 +71,7 @@ h2 {
     font-size: 2.5em;
 }
 h3 {
-    margin: 15px 0 5px;
+    margin: 15px 0;
     font-size: 1.5em;
     font-style: italic;
 }
@@ -112,6 +116,10 @@ p {
     background: linear-gradient(#e8e5e5, #fcf9f9, #fcf9f9);
     box-shadow: 0 7px 10px -7px;
 }
+#contact a:first-of-type h3 {
+    font-style: normal;
+    margin: 2px 0 0;
+}
 #contact h3 {
     font-style: normal;
 }
@@ -123,7 +131,17 @@ p {
     text-decoration: none;
     color: black;
 }
+footer {
+    background-color: #272828;
+    color: #b7f93e;
+}
+sup {
+    font-size: .6em;
+}
 @media all and (max-width: 750px) {
+    main {
+        margin: 0 15px;
+    }
     nav {
         text-align: center;
     }
@@ -131,10 +149,24 @@ p {
         flex-direction: column;
     }
     .name {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
         width: 100%;
     }
     li {
         margin: 10px auto;
+    }
+    #projects div div {
+        width: 100%;
+        /* margin: 15px auto; */
+    }
+    p {
+        font-size: 1.1em;
+        padding: 5px 20px;
+    }
+    #contact div {
+        /* display: inline-block; */
+        margin: 5px 50px;
+        padding: 7px;
+        font-size: .8em;
     }
 }
