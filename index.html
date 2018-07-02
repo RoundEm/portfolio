@@ -95,7 +95,7 @@
                             <li>A11y Friendly</li>
                             <li>Responsive Design</li>
                         </ul>
-                        <p>Create points-based golfing leagues for you and your friends or social groups. Establish points for custom criteria  and accomplishments achieved during each round played. The goal is to earn the most points during a season (for fellow golfers, think Fed-Ex Cup<sup>&#174;</sup> points on the PGA Tour<sup>&#174;</sup>) and in doing so it will give you more incentive to continuously improve your game!</p>
+                        <p>Create your own golfing leagues and compete against your friends and social groups. Establish points for custom criteria and accomplishments achieved during each round played. Battle your opponents to try and earn the most points during a season (for fellow golfers, think Fed-Ex Cup<sup>&#174;</sup> points on the PGA Tour<sup>&#174;</sup>) while incentivizing yourself to continuously improve your game!</p>
                         <a href="https://clash-for-the-cup.herokuapp.com/" target="_blank"><img src="images/clash-for-the-cup_1.png" alt="Screenshot of Clash for the Cup application Create League page" class="portfolio_img" /></a>
                         <a href="https://clash-for-the-cup.herokuapp.com/" target="_blank"><img src="images/clash-for-the-cup_2.png" alt="Screenshot of Clash for the Cup application View/Edit Round page" class="portfolio_img" /></a>
                     </div>
@@ -129,16 +129,13 @@
         </main>
 
         <footer role="contentinfo">
-            <!-- <p>&#169; Jason Roundtree 2018</p> -->
             <p></p>       
         </footer>
-        <!-- <script type="text/javascript" src="index.js"></script> -->
         <script>
             const date = new Date();
             const year = date.getFullYear();
             function updateFooter() {
-                const x = document.querySelector('footer p');
-                x.innerHTML = `&#169; Jason Roundtree ${year}`;
+                document.querySelector('footer p').innerHTML = `&#169; Jason Roundtree ${year}`
             };
             updateFooter();
         </script>
