@@ -6,20 +6,13 @@
 }
 body {
     background-color: #fcf9f9;
-    /* padding-top: 90px; */
 }
 nav {
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
     font-size: 2em;
     padding: 30px 25px;
     background-color: #272828;
     overflow: hidden;
 }
-/* main {
-    padding: 15px;
-} */
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -135,6 +128,9 @@ p {
     text-decoration: none;
     color: black;
 }
+#contact .portfolio_img {
+    height: 300px;
+}
 footer {
     background-color: #272828;
     color: #b7f93e;
@@ -162,14 +158,12 @@ sup {
     }
     #projects div div {
         width: 100%;
-        /* margin: 15px auto; */
     }
     p {
         font-size: 1.1em;
         padding: 5px 20px;
     }
     #contact div {
-        /* display: inline-block; */
         margin: 5px 50px;
         padding: 7px;
         font-size: .8em;
