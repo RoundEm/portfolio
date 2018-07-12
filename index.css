@@ -8,6 +8,9 @@ body {
     background-color: #fcf9f9;
 }
 nav {
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
     font-size: 2em;
     padding: 30px 25px;
     background-color: #272828;
@@ -62,6 +65,7 @@ h2 {
     text-align: center;
     font-family: 'Pirata One', cursive;
     font-size: 2.5em;
+    margin-top: 15px;
 }
 h3 {
     margin: 15px 0 2px;
