@@ -122,10 +122,14 @@ p {
 #contact a {
     text-decoration: none;
     color: black;
+    
 }
 #contact .portfolio_img {
     height: 300px;
 }
+/* img.#codewars  {
+    margin: 0 0 15px;
+} */
 footer {
     background-color: #272828;
     color: #b7f93e;
