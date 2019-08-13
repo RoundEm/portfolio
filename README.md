@@ -1,2 +1,2 @@
 # Personal Portfolio
-This is a portfolio of the 3 capstone projects I completed while attending Thinkful's Full Stack Flexible Web Development program. The portfolio site was made with HTML, CSS, Responsive Design and A11y best practices.
+This is my personal website including information about myself and some projects and code samples I've worked on.
