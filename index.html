@@ -124,13 +124,13 @@
                         </ul>
                         <p>I decided to build this because wanted to get some practice making a table in React with "fancy" features like static headers and collapsable rows for related groups of data (in this case, dates). I didn't use any table or style libraries; everything is built from basic React, HTML, CSS and I also used Faker.js to generate the dummy data.</p>
                         <a href="https://roundem.github.io/fancy_table/" target="_blank">
-                            <img src="images/fancy_table_1.png" alt="A screenshot of my fancy React.js table" class="portfolio_img" />
+                            <img src="images/fancy_table_1.png" alt="A screenshot of my fancy React.js table" class="portfolio_img" width="700" />
                         </a>
                         <a href="https://roundem.github.io/fancy_table/" target="_blank">
-                            <img src="images/fancy_table_3.png" alt="Another screenshot of my fancy React.js table with the most the section for the more recent date collapsed" class="portfolio_img" />
+                            <img src="images/fancy_table_3.png" alt="Another screenshot of my fancy React.js table with the most the section for the more recent date collapsed" class="portfolio_img" width="700" />
                         </a>
                         <a href="https://roundem.github.io/fancy_table/" target="_blank">
-                            <img src="images/fancy_table_2.png" alt="Screenshot of my fancy React.js table sorted from old to new with the section for the most recent date collapsed" class="portfolio_img" />
+                            <img src="images/fancy_table_2.png" alt="Screenshot of my fancy React.js table sorted from old to new with the section for the most recent date collapsed" class="portfolio_img"width="700" />
                         </a>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                 </a>
                 <a href="https://www.linkedin.com/in/jason-t-roundtree/" target="_blank">
                     <div>
-                        <img src="images/linkedin.png" alt="Linkedin icon" />
+                        <img src="images/linkedin.png" alt="LinkedIn icon" />
                         <h3>Linkedin</h3>
 
                     </div>
@@ -162,19 +162,19 @@
 
                 <!-- <a href="Jason_Roundtree_Resume.docx" target="_blank">Resume</a> -->
 
-                <img src="images/profileImage.png" class="portfolio_img" alt="Jason Roundtree" id="codewars" />
+                <img src="images/profileImage.png" class="portfolio_img" alt="Jason Roundtree" />
                 <p>Thanks for visiting!</p>
             </section>
         </main>
 
         <footer role="contentinfo">
-            <p></p>       
+            <p id="copyright-info"></p>       
         </footer>
         <script>
             const date = new Date();
             const year = date.getFullYear();
             function updateFooter() {
-                document.querySelector('footer p').innerHTML = `&#169; Jason Roundtree ${year}`
+                document.querySelector('#copyright-info').innerHTML = `&#169; Jason Roundtree ${year}`
             };
             updateFooter();
         </script>
