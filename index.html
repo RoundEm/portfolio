@@ -24,6 +24,7 @@
                 <li class="name" tabindex="0">Jason Roundtree</li>
                 <li tabindex="0"><a href="#about">About</a></li>
                 <li tabindex="0"><a href="#projects">Projects</a></li>
+                <li tabindex="0"><a href="https://blog.jasonroundtree.info/">Blog</a></li>
                 <li tabindex="0"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -164,6 +165,7 @@
 
                 <img src="images/profileImage.png" class="portfolio_img" alt="Jason Roundtree" />
                 <p>Thanks for visiting!</p>
+                <button id="to-top-btn">Back to top</button>
             </section>
         </main>
 
@@ -177,6 +179,16 @@
                 document.querySelector('#copyright-info').innerHTML = `&#169; Jason Roundtree ${year}`
             };
             updateFooter();
+
+            const btn = document.getElementById('to-top-btn')
+            function handleScrollToTop() {
+                window.scroll({
+                    top: 0, 
+                    behavior: 'smooth'
+                })
+            }
+            btn.addEventListener('click', handleScrollToTop)
+
         </script>
     </body>
 </html>

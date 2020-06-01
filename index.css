@@ -8,9 +8,6 @@ body {
     background-color: #fcf9f9;
 }
 nav {
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
     font-size: 2em;
     padding: 30px 25px;
     background-color: #272828;
@@ -138,6 +135,16 @@ footer {
 }
 sup {
     font-size: .6em;
+}
+#to-top-btn {
+    padding: 5px;
+    margin-top: 15px;
+    border: none;
+}
+#to-top-btn:hover {
+    cursor: pointer;
+    background-color: #272828;
+    color: #b7f93e;
 }
 @media all and (max-width: 750px) {
     main {
