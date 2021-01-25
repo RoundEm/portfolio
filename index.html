@@ -191,7 +191,7 @@
                         <h3>Email</h3>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/jason-t-roundtree/" target="_blank">
+                <a href="https://www.linkedin.com/in/jason-roundtree/" target="_blank">
                     <div>
                         <img src="images/linkedin.png" alt="LinkedIn icon" />
                         <h3>Linkedin</h3>
@@ -220,10 +220,7 @@
         <script>
             const date = new Date();
             const year = date.getFullYear();
-            function updateFooter() {
-                document.querySelector('#copyright-info').innerHTML = `&#169; Jason Roundtree ${year}`
-            };
-            updateFooter();
+            document.querySelector('#copyright-info').innerHTML = `&#169; Jason Roundtree ${year}`
 
             const btn = document.getElementById('to-top-btn')
             function handleScrollToTop() {
@@ -233,7 +230,6 @@
                 })
             }
             btn.addEventListener('click', handleScrollToTop)
-
         </script>
     </body>
 </html>
